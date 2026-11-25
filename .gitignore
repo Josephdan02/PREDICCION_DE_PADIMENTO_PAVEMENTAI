@@ -1,0 +1,27 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Datos generados y subidas de usuario
+storage/
+uploads/patologias/*
+reports/*
+!uploads/patologias/.gitkeep
+!reports/.gitkeep
+
+# Modelos binarios (se regeneran con `python -m src.train_model`)
+models/*.joblib
+
+# Sistema
+.DS_Store
+Thumbs.db

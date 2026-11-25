@@ -1,0 +1,937 @@
+/* ==========================================================================
+   PAVEMENT AI — Identidad visual (Bento Grid)
+   Paleta: grafito #171A1C · carbón #252B2D · lima #A3E635 · salvia #D6E5B5 · hueso #F1F3EF
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+    --graphite: #171A1C;
+    --carbon: #252B2D;
+    --carbon-soft: #2E3538;
+    --lime: #A3E635;
+    --sage: #D6E5B5;
+    --bone: #F1F3EF;
+    --muted: #8B9694;
+    --line: #3A4245;
+    --radius: 16px;
+}
+
+/* ---------- Base ---------- */
+html, body, .stApp, [data-testid="stAppViewContainer"], [data-testid="stSidebar"],
+[data-testid="stSidebarContent"], [data-testid="stSidebarUserContent"],
+[data-testid="stSidebarNav"], [data-testid="stMain"], .main, .block-container,
+h1, h2, h3, h4, h5, p, span, div, label, li, input, textarea, button {
+    font-family: 'Manrope', 'Segoe UI', 'Helvetica Neue', sans-serif !important;
+}
+
+.mono, .mono * {
+    font-family: 'IBM Plex Mono', 'Consolas', ui-monospace, monospace !important;
+}
+
+.stApp {
+    background:
+        radial-gradient(circle at 12% -10%, rgba(163, 230, 53, 0.07), transparent 42%),
+        radial-gradient(circle at 92% 4%, rgba(214, 229, 181, 0.05), transparent 38%),
+        var(--graphite);
+    color: var(--bone);
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+[data-testid="stAppViewContainer"] > .main .block-container,
+.block-container {
+    padding-top: 1.6rem;
+    padding-bottom: 3rem;
+    max-width: 1320px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Manrope', 'Segoe UI', sans-serif;
+    color: var(--bone);
+    letter-spacing: -0.01em;
+}
+
+h1 { font-weight: 800; font-size: 1.9rem; }
+h2 { font-weight: 700; font-size: 1.35rem; }
+h3 { font-weight: 700; font-size: 1.08rem; }
+
+a { color: var(--lime); }
+
+p, li, span, label, div { font-size: 0.95rem; }
+
+hr { border-color: var(--line); }
+
+/* ---------- Sidebar ---------- */
+[data-testid="stSidebar"] {
+    background: #141719;
+    border-right: 1px solid var(--line);
+}
+
+[data-testid="stSidebar"] .block-container,
+[data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {
+    padding-top: 1.2rem;
+    padding-bottom: 1.5rem;
+}
+
+[data-testid="stSidebarContent"] {
+    display: flex !important;
+    flex-direction: column;
+}
+
+[data-testid="stSidebarNav"] {
+    order: 3;
+    flex: 1 1 auto;
+    padding-top: 0.4rem;
+}
+
+[data-testid="stSidebarNav"] li a,
+[data-testid="stSidebarNav"] li a span,
+[data-testid="stSidebarNav"] a {
+    font-family: 'Manrope', 'Segoe UI', sans-serif !important;
+}
+
+[data-testid="stSidebarNav"] li a span[data-testid="stIconMaterial"],
+[data-testid="stSidebarNav"] li a [data-testid="stIconMaterial"] {
+    display: none;
+}
+
+[data-testid="stSidebarNav"] [data-testid="stNavSectionHeader"] {
+    font-size: 0.68rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: var(--muted) !important;
+    font-weight: 700 !important;
+    padding: 0.75rem 0.25rem 0.25rem 0.25rem;
+}
+
+/* ---------- Iconos SVG de la navegación ----------
+   Streamlit solo admite emojis o nombres de Material Symbols en st.Page(icon=...).
+   El glifo declarado actúa como marcador: aquí se oculta y se pinta el SVG
+   propio de la página, resuelto por el atributo href del enlace. */
+[data-testid="stSidebarNav"] [data-testid="stIconMaterial"] {
+    display: inline-block !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    margin-right: 0.05rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px 18px;
+}
+
+[data-testid="stSidebarNav"] a:hover [data-testid="stIconMaterial"] {
+    transform: none;
+}
+
+[data-testid="stSidebarNav"] a[href$="/dashboard"] [data-testid="stIconMaterial"],
+[data-testid="stSidebarNav"] a[href$="/"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D6E5B5' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='7.5' height='7.5' rx='1.6'/%3E%3Crect x='13.5' y='3' width='7.5' height='4.5' rx='1.6'/%3E%3Crect x='13.5' y='10.5' width='7.5' height='10.5' rx='1.6'/%3E%3Crect x='3' y='13.5' width='7.5' height='7.5' rx='1.6'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[href$="/simulador_pci"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D6E5B5' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 17.5 8.5 12l3.5 3 6.5-8'/%3E%3Cpath d='M15 7h3.5v3.5'/%3E%3Ccircle cx='8.5' cy='12' r='1.6'/%3E%3Ccircle cx='12' cy='15' r='1.6'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[href$="/modelo_ml"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D6E5B5' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='5' cy='12' r='2.2'/%3E%3Ccircle cx='12' cy='6' r='2.2'/%3E%3Ccircle cx='12' cy='18' r='2.2'/%3E%3Ccircle cx='19' cy='12' r='2.2'/%3E%3Cpath d='M7 11.2 10 7.1M7 12.8l3 4.1M14 7.1l3 4.1M14 16.9l3-4.1'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[href$="/registro_vias"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D6E5B5' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8.4 3h7.2l3.3 18H5.1z'/%3E%3Cpath d='M12 5.4v2.4M12 10.6v2.8M12 16.4v2.2'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[href$="/patologias"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D6E5B5' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.6 3.9a1.6 1.6 0 0 1 2.8 0l7.7 13.6a1.6 1.6 0 0 1-1.4 2.4H4.3a1.6 1.6 0 0 1-1.4-2.4z'/%3E%3Cpath d='M12 9v3.6'/%3E%3Cpath d='M12 16.2h.01'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[href$="/dataset"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D6E5B5' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3.2 21 7.7 12 12.2 3 7.7z'/%3E%3Cpath d='M3 12.2l9 4.5 9-4.5'/%3E%3Cpath d='M3 16.6l9 4.5 9-4.5'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[href$="/reportes"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D6E5B5' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/%3E%3Cpath d='M14 3v5h5'/%3E%3Cpath d='M8.6 12.5h6.8M8.6 16h4.8'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[href$="/acerca"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D6E5B5' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='8.6'/%3E%3Cpath d='M12 11.2v5'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+
+/* Página activa: el icono pasa a verde lima para reforzar la jerarquía. */
+[data-testid="stSidebarNav"] a[aria-current="page"][href$="/dashboard"] [data-testid="stIconMaterial"],
+[data-testid="stSidebarNav"] a[aria-current="page"][href$="/"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A3E635' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='7.5' height='7.5' rx='1.6'/%3E%3Crect x='13.5' y='3' width='7.5' height='4.5' rx='1.6'/%3E%3Crect x='13.5' y='10.5' width='7.5' height='10.5' rx='1.6'/%3E%3Crect x='3' y='13.5' width='7.5' height='7.5' rx='1.6'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"][href$="/simulador_pci"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A3E635' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 17.5 8.5 12l3.5 3 6.5-8'/%3E%3Cpath d='M15 7h3.5v3.5'/%3E%3Ccircle cx='8.5' cy='12' r='1.6'/%3E%3Ccircle cx='12' cy='15' r='1.6'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"][href$="/modelo_ml"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A3E635' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='5' cy='12' r='2.2'/%3E%3Ccircle cx='12' cy='6' r='2.2'/%3E%3Ccircle cx='12' cy='18' r='2.2'/%3E%3Ccircle cx='19' cy='12' r='2.2'/%3E%3Cpath d='M7 11.2 10 7.1M7 12.8l3 4.1M14 7.1l3 4.1M14 16.9l3-4.1'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"][href$="/registro_vias"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A3E635' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8.4 3h7.2l3.3 18H5.1z'/%3E%3Cpath d='M12 5.4v2.4M12 10.6v2.8M12 16.4v2.2'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"][href$="/patologias"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A3E635' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.6 3.9a1.6 1.6 0 0 1 2.8 0l7.7 13.6a1.6 1.6 0 0 1-1.4 2.4H4.3a1.6 1.6 0 0 1-1.4-2.4z'/%3E%3Cpath d='M12 9v3.6'/%3E%3Cpath d='M12 16.2h.01'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"][href$="/dataset"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A3E635' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3.2 21 7.7 12 12.2 3 7.7z'/%3E%3Cpath d='M3 12.2l9 4.5 9-4.5'/%3E%3Cpath d='M3 16.6l9 4.5 9-4.5'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"][href$="/reportes"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A3E635' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/%3E%3Cpath d='M14 3v5h5'/%3E%3Cpath d='M8.6 12.5h6.8M8.6 16h4.8'/%3E%3C/svg%3E");
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"][href$="/acerca"] [data-testid="stIconMaterial"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A3E635' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='8.6'/%3E%3Cpath d='M12 11.2v5'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+
+/* Enlace de retorno al dashboard dentro de la página: mismo tratamiento. */
+[data-testid="stPageLink"] [data-testid="stIconMaterial"] {
+    display: inline-block !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    margin-right: 0.35rem;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A3E635' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 5l-7 7 7 7'/%3E%3C/svg%3E");
+}
+
+[data-testid="stPageLink"] a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted) !important;
+}
+
+[data-testid="stPageLink"] a:hover {
+    color: var(--lime) !important;
+}
+
+/* Botón de colapsar: se sustituye el glifo por una flecha tipográfica. */
+[data-testid="stSidebarCollapseButton"] [data-testid="stIconMaterial"] {
+    font-size: 0 !important;
+    color: transparent !important;
+}
+
+[data-testid="stSidebarCollapseButton"] [data-testid="stIconMaterial"]::after {
+    content: "«";
+    font-size: 1rem;
+    color: var(--sage);
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Los bloques propios y la navegación comparten columna flexible para poder
+   ordenarlos: marca + estado del modelo (1) → páginas (3). El bloque previo a
+   ``st.navigation`` es el único que existe en ese momento (``:first-child``). */
+[data-testid="stSidebarUserContent"] {
+    display: contents;
+}
+
+[data-testid="stSidebarUserContent"] > div:first-child { order: 1; }
+
+.sidebar-meta {
+    border-top: 1px solid var(--line);
+    padding-top: 0.7rem;
+    margin-top: 0.4rem;
+}
+
+[data-testid="stSidebarNavItems"] {
+    padding-top: 0.2rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.2rem 0.2rem 0.9rem 0.2rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 0.8rem;
+}
+
+.brand-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    background: var(--lime);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: var(--graphite) !important;
+    letter-spacing: -0.03em;
+    flex-shrink: 0;
+}
+
+.brand-name {
+    font-weight: 800;
+    font-size: 1.02rem;
+    line-height: 1.1;
+    color: var(--bone);
+    letter-spacing: 0.02em;
+}
+
+.brand-sub {
+    font-size: 0.68rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 2px;
+}
+
+.sidebar-section {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: var(--muted);
+    margin: 1.1rem 0 0.35rem 0.25rem;
+    font-weight: 700;
+}
+
+[data-testid="stSidebarNav"] ul {
+    padding-left: 0;
+    gap: 1px;
+}
+
+[data-testid="stSidebarNav"] li a {
+    border-radius: 9px;
+    padding: 0.32rem 0.6rem;
+    color: var(--sage) !important;
+    font-weight: 600;
+    font-size: 0.88rem;
+    transition: background 0.12s ease, color 0.12s ease;
+}
+
+[data-testid="stSidebarNav"] li a:hover {
+    background: var(--carbon);
+    color: var(--bone) !important;
+}
+
+[data-testid="stSidebarNav"] li a span {
+    font-size: 0.88rem;
+}
+
+[data-testid="stSidebarNav"] [data-testid="stSidebarNavLink"] span {
+    color: inherit;
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"] {
+    background: rgba(163, 230, 53, 0.13);
+    color: var(--lime) !important;
+    box-shadow: inset 3px 0 0 var(--lime);
+}
+
+/* ---------- Encabezado de página ---------- */
+.page-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.15rem;
+}
+
+.page-head-inner {
+    display: block;
+    width: 100%;
+}
+
+.page-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--lime);
+    margin-bottom: 0.25rem;
+}
+
+.page-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--bone);
+    margin: 0;
+}
+
+.page-title {
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    margin: 0;
+    padding: 0;
+    color: var(--bone) !important;
+}
+
+.page-title,
+.page-eyebrow,
+.bento-value,
+.pci-value,
+.brand-name,
+.bento-label,
+.bento-card-title,
+.page-desc {
+    color: var(--bone);
+}
+
+.page-eyebrow { color: var(--lime); }
+.bento-label { color: var(--muted); }
+
+.page-head p,
+.page-head strong {
+    color: inherit;
+}
+
+.bento-value {
+    white-space: nowrap;
+    overflow-wrap: normal;
+}
+
+.bento-value-sm {
+    font-size: 1.15rem !important;
+    letter-spacing: -0.01em;
+    line-height: 1.35;
+    padding-top: 0.35rem;
+}
+
+.page-desc-color {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    max-width: 780px;
+}
+
+.bento-hero .page-desc-color,
+.bento-hero .bento-foot { color: var(--sage); }
+
+/* ---------- Bento grid ---------- */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 0.9rem;
+    margin-bottom: 0.9rem;
+    align-items: stretch;
+}
+
+.bento {
+    background: var(--carbon);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.05rem 1.15rem;
+    position: relative;
+    min-height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 0;
+    transition: border-color 0.15s ease;
+}
+
+.bento:hover {
+    border-color: rgba(163, 230, 53, 0.45);
+}
+
+.bento-span-3 { grid-column: span 3; }
+.bento-span-4 { grid-column: span 4; }
+.bento-span-5 { grid-column: span 5; }
+.bento-span-6 { grid-column: span 6; }
+.bento-span-7 { grid-column: span 7; }
+.bento-span-8 { grid-column: span 8; }
+.bento-span-12 { grid-column: span 12; }
+
+.bento-hero {
+    background: var(--graphite);
+    border-color: var(--lime);
+    box-shadow: inset 0 0 0 1px rgba(163, 230, 53, 0.12);
+}
+
+.bento-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+    margin-bottom: 0.4rem;
+    min-width: 0;
+}
+
+.bento-head .bento-label {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.bento-head .bento-icon {
+    flex: 0 0 auto;
+}
+
+.bento-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.35;
+}
+
+.bento-icon {
+    font-size: 0.95rem;
+    color: var(--lime);
+    opacity: 0.9;
+}
+
+.bento-value {
+    font-size: 1.95rem;
+    font-weight: 800;
+    line-height: 1.05;
+    color: var(--bone);
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+}
+
+.bento-unit {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin-left: 0.2rem;
+}
+
+.bento-foot {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 0.55rem;
+}
+
+.bento-foot strong { color: var(--sage); }
+
+/* Tarjeta de sección (gráficos, tablas) */
+.bento-card {
+    background: var(--carbon);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1rem 1.1rem 0.5rem 1.1rem;
+    margin-bottom: 0.9rem;
+}
+
+.bento-card-tight { padding-bottom: 0.9rem; }
+
+/* Tarjeta real (st.container(border=True)) usada para gráficos y tablas */
+[data-testid="stVerticalBlockBorderWrapper"]:has(> div[data-testid="stVerticalBlock"]) {
+    border-radius: var(--radius) !important;
+}
+
+[data-testid="stMainBlockContainer"] [data-testid="stVerticalBlockBorderWrapper"] {
+    background: var(--carbon);
+    border: 1px solid var(--line) !important;
+    border-radius: var(--radius) !important;
+    padding: 0.35rem 0.7rem 0.35rem 0.7rem;
+    margin-bottom: 0.35rem;
+}
+
+[data-testid="stSidebar"] [data-testid="stVerticalBlockBorderWrapper"] {
+    background: var(--carbon);
+    border: 1px solid var(--line) !important;
+    border-radius: 12px !important;
+    padding: 0.6rem 0.7rem;
+}
+
+.bento-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--sage);
+    margin-bottom: 0.35rem;
+}
+
+/* Tarjeta de gráfico: oculta el fondo real de Streamlit */
+[data-testid="stPlotlyChart"] {
+    border-radius: 12px;
+}
+
+/* ---------- Chips / badges ---------- */
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.16rem 0.62rem;
+    border-radius: 999px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+}
+
+.chip-lg { font-size: 0.86rem; padding: 0.26rem 0.85rem; }
+.chip-soft { background: rgba(163, 230, 53, 0.12); color: var(--lime); border: 1px solid rgba(163, 230, 53, 0.3); }
+.chip-neutral { background: var(--carbon-soft); color: var(--sage); border: 1px solid var(--line); }
+.chip-warn { background: rgba(227, 192, 90, 0.14); color: #E3C05A; border: 1px solid rgba(227, 192, 90, 0.35); }
+.chip-danger { background: rgba(200, 91, 74, 0.16); color: #E98D7C; border: 1px solid rgba(200, 91, 74, 0.38); }
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* ---------- PCI gauge ---------- */
+.pci-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pci-value {
+    font-size: 3.1rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+}
+
+.pci-scale-wrap {
+    position: relative;
+    width: 100%;
+    flex: 0 0 auto;
+    margin-top: 0.75rem;
+}
+
+.pci-scale {
+    display: flex;
+    width: 100%;
+    height: 9px;
+    border-radius: 999px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+}
+
+.pci-scale span { height: 100%; flex: 0 0 auto; }
+
+.pci-marker {
+    position: absolute;
+    top: -3px;
+    width: 3px;
+    height: 15px;
+    background: var(--bone);
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(23, 26, 28, 0.9);
+    transform: translateX(-50%);
+}
+
+/* ---------- Actividad / listas ---------- */
+.activity {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.activity-row {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 10px;
+    background: rgba(23, 26, 28, 0.45);
+    border: 1px solid rgba(58, 66, 69, 0.6);
+}
+
+.activity-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: rgba(163, 230, 53, 0.1);
+    color: var(--lime);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.activity-main { flex: 1; min-width: 0; }
+.activity-title { font-size: 0.85rem; font-weight: 600; color: var(--bone); }
+.activity-meta { font-size: 0.74rem; color: var(--muted); }
+
+/* ---------- Tablas ---------- */
+[data-testid="stDataFrame"], [data-testid="stDataFrameResizable"] {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+}
+
+/* ---------- Formularios / inputs ---------- */
+[data-testid="stForm"] {
+    background: var(--carbon);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.15rem 1.25rem 0.6rem 1.25rem;
+}
+
+div[data-baseweb="input"] input,
+div[data-baseweb="select"] > div,
+div[data-baseweb="textarea"] textarea,
+[data-testid="stNumberInput"] input,
+[data-testid="stDateInput"] input {
+    background: #1D2224 !important;
+    border-color: var(--line) !important;
+    color: var(--bone) !important;
+    border-radius: 9px !important;
+}
+
+div[data-baseweb="input"] input:focus,
+[data-testid="stNumberInput"] input:focus {
+    border-color: var(--lime) !important;
+    box-shadow: 0 0 0 1px var(--lime) !important;
+}
+
+div[data-baseweb="select"] svg { color: var(--sage); }
+
+[data-testid="stWidgetLabel"] p,
+[data-testid="stWidgetLabel"] label {
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    color: var(--sage) !important;
+    letter-spacing: 0.01em;
+}
+
+/* ---------- Botones ---------- */
+.stButton > button,
+.stFormSubmitButton > button,
+.stDownloadButton > button {
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    border: 1px solid var(--line);
+    background: var(--carbon-soft);
+    color: var(--bone);
+    transition: background 0.12s ease, border-color 0.12s ease;
+    min-height: 2.3rem;
+}
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover,
+.stDownloadButton > button:hover {
+    border-color: var(--lime);
+    color: var(--bone);
+}
+
+.stButton > button:focus-visible,
+.stFormSubmitButton > button:focus-visible,
+.stDownloadButton > button:focus-visible {
+    outline: 2px solid var(--lime);
+    outline-offset: 2px;
+}
+
+.stFormSubmitButton > button,
+.stButton > button[kind="primary"],
+.stDownloadButton > button {
+    background: var(--lime);
+    color: var(--graphite);
+    border-color: var(--lime);
+}
+
+.stFormSubmitButton > button:hover,
+.stButton > button[kind="primary"]:hover,
+.stDownloadButton > button:hover {
+    background: #B4F04D;
+    color: var(--graphite);
+}
+
+/* ---------- Métricas nativas ---------- */
+[data-testid="stMetric"] {
+    background: var(--carbon);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 0.7rem 0.9rem;
+}
+
+[data-testid="stMetricLabel"] p {
+    font-size: 0.74rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted) !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stMetricValue"] {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--bone);
+}
+
+/* ---------- Alertas ---------- */
+[data-testid="stAlert"] {
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: var(--carbon-soft);
+    font-size: 0.87rem;
+}
+
+/* ---------- Tabs ---------- */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0.35rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: transparent;
+    color: var(--muted);
+    border-radius: 9px 9px 0 0;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.45rem 0.9rem;
+}
+
+.stTabs [aria-selected="true"] {
+    color: var(--lime) !important;
+    background: rgba(163, 230, 53, 0.08);
+    border-bottom: 2px solid var(--lime);
+}
+
+/* ---------- Expander ---------- */
+[data-testid="stExpander"] {
+    background: var(--carbon);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+}
+
+[data-testid="stExpander"] summary p {
+    font-weight: 700;
+    font-size: 0.86rem;
+    color: var(--sage);
+}
+
+/* Los glifos de material no siempre se renderizan en esta versión de
+   Streamlit (aparecen como palabras: "arrow_right", "expand_more"…).
+   Se ocultan globalmente y se sustituyen por indicadores tipográficos. */
+span[data-testid="stIconMaterial"],
+[data-testid="stExpander"] [data-testid="stIconMaterial"],
+[data-testid="stExpanderIcon"] {
+    display: none !important;
+}
+
+[data-testid="stExpander"] summary::before {
+    content: "▸";
+    color: var(--lime);
+    font-size: 0.8rem;
+    margin-right: 0.45rem;
+}
+
+[data-testid="stExpander"] details[open] summary::before {
+    content: "▾";
+}
+
+/* ---------- File uploader ---------- */
+[data-testid="stFileUploader"] {
+    background: #1D2224;
+    border: 1px dashed var(--line);
+    border-radius: 12px;
+    padding: 0.4rem;
+}
+
+[data-testid="stFileUploader"] section { background: transparent; }
+
+[data-testid="stFileUploader"] section > button,
+[data-testid="stFileUploader"] button {
+    font-size: 0 !important;
+    position: relative;
+}
+
+[data-testid="stFileUploader"] button::after {
+    content: "Seleccionar archivo";
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--graphite);
+}
+
+[data-testid="stFileUploader"] button * {
+    font-size: 0 !important;
+    display: none !important;
+}
+
+/* ---------- Leyenda PCI ---------- */
+.legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+}
+
+.legend-item {
+    border-radius: 10px;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--line);
+    background: rgba(23, 26, 28, 0.5);
+}
+
+.legend-range { font-size: 0.72rem; color: var(--muted); font-weight: 600; }
+.legend-name { font-size: 0.86rem; font-weight: 700; margin-top: 1px; }
+
+/* ---------- Tarjeta de fotografía ---------- */
+.photo-row {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+/* ---------- Footer ---------- */
+.app-footer {
+    margin-top: 2rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.74rem;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1100px) {
+    .bento-span-3 { grid-column: span 6; }
+    .bento-span-4 { grid-column: span 6; }
+    .bento-span-5 { grid-column: span 6; }
+    .bento-span-7 { grid-column: span 6; }
+    .bento-span-8 { grid-column: span 12; }
+}
+
+@media (max-width: 720px) {
+    .bento-grid { grid-template-columns: 1fr; gap: 0.7rem; }
+    .bento-span-3, .bento-span-4, .bento-span-5, .bento-span-6,
+    .bento-span-7, .bento-span-8, .bento-span-12 { grid-column: span 1; }
+    .page-title { font-size: 1.45rem; }
+    .bento-value { font-size: 1.6rem; white-space: normal; }
+    .bento-value-sm { font-size: 1.05rem !important; }
+    .pci-value { font-size: 2.4rem; }
+    .block-container { padding-left: 1rem; padding-right: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+}

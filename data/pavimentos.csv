@@ -1,0 +1,99 @@
+id_registro,codigo_tramo,distrito,tipo_pavimento,fecha_inspeccion,antiguedad_anios,volumen_transito,tipo_patologia,severidad,cantidad_fallas,pci_observado,tipo_registro
+REG-0005,AMAR-003,Amarilis,Rígido,2023-11-17,5.2,3800,Grietas longitudinales,Alta,7,83.6,SIMULADO
+REG-0006,AMAR-003,Amarilis,Rígido,2025-11-09,7.2,3800,Grietas longitudinales,Alta,13,73.8,SIMULADO
+REG-0009,AMAR-005,Amarilis,Rígido,2025-11-15,14.1,5100,Losa dividida,Alta,10,52.5,SIMULADO
+REG-0012,AMAR-007,Amarilis,Rígido,2025-10-29,11.6,3500,Despostillamiento,Media,15,70.7,SIMULADO
+REG-0013,AMAR-008,Amarilis,Rígido,2022-10-27,11.6,4800,Grietas longitudinales,Baja,14,81.5,SIMULADO
+REG-0014,AMAR-008,Amarilis,Rígido,2025-11-29,14.6,4800,Grietas longitudinales,Baja,18,65.0,SIMULADO
+REG-0015,AMAR-009,Amarilis,Rígido,2025-11-18,11.4,8500,Grietas de esquina,Alta,15,45.2,SIMULADO
+REG-0016,AMAR-010,Amarilis,Rígido,2021-11-17,4.7,5150,Grietas longitudinales,Baja,8,100.0,SIMULADO
+REG-0017,AMAR-010,Amarilis,Rígido,2025-11-26,8.7,5150,Grietas longitudinales,Baja,9,81.8,SIMULADO
+REG-0021,AMAR-012,Amarilis,Rígido,2023-11-28,10.7,600,Grietas de esquina,Alta,9,60.4,SIMULADO
+REG-0022,AMAR-012,Amarilis,Rígido,2025-10-28,12.7,600,Grietas de esquina,Alta,13,63.7,SIMULADO
+REG-0024,AMAR-014,Amarilis,Rígido,2023-10-21,19.4,7500,Grietas de esquina,Media,23,37.2,SIMULADO
+REG-0025,AMAR-014,Amarilis,Rígido,2025-10-22,21.4,7500,Grietas de esquina,Media,25,35.0,SIMULADO
+REG-0026,AMAR-015,Amarilis,Rígido,2025-11-22,25.9,2950,Grietas transversales,Media,24,44.1,SIMULADO
+REG-0034,AMAR-020,Amarilis,Rígido,2021-10-26,14.3,10200,Losa dividida,Baja,18,46.6,SIMULADO
+REG-0035,AMAR-020,Amarilis,Rígido,2023-11-27,16.3,10200,Losa dividida,Baja,20,41.7,SIMULADO
+REG-0036,AMAR-020,Amarilis,Rígido,2025-11-19,18.3,10200,Losa dividida,Baja,21,39.2,SIMULADO
+REG-0042,AMAR-024,Amarilis,Rígido,2021-11-23,14.3,6900,Grietas transversales,Baja,23,56.2,SIMULADO
+REG-0043,AMAR-024,Amarilis,Rígido,2023-11-24,16.3,6900,Grietas transversales,Baja,20,40.7,SIMULADO
+REG-0044,AMAR-024,Amarilis,Rígido,2025-11-28,18.3,6900,Grietas transversales,Baja,23,41.6,SIMULADO
+REG-0056,AMAR-031,Amarilis,Rígido,2021-11-09,12.2,5050,Grietas transversales,Media,8,71.6,SIMULADO
+REG-0057,AMAR-031,Amarilis,Rígido,2025-11-05,16.2,5050,Grietas transversales,Media,21,58.4,SIMULADO
+REG-0074,AMAR-043,Amarilis,Rígido,2022-11-20,8.5,6450,Grietas de esquina,Alta,10,59.4,SIMULADO
+REG-0075,AMAR-043,Amarilis,Rígido,2025-11-15,11.5,6450,Grietas de esquina,Alta,6,56.9,SIMULADO
+REG-0079,AMAR-046,Amarilis,Rígido,2025-10-30,18.2,8500,Grietas transversales,Baja,23,59.0,SIMULADO
+REG-0084,AMAR-049,Amarilis,Rígido,2021-11-23,4.6,4850,Grietas longitudinales,Baja,13,79.7,SIMULADO
+REG-0085,AMAR-049,Amarilis,Rígido,2023-10-24,6.6,4850,Grietas longitudinales,Baja,8,92.4,SIMULADO
+REG-0086,AMAR-049,Amarilis,Rígido,2025-10-26,8.6,4850,Grietas longitudinales,Baja,13,71.4,SIMULADO
+REG-0091,AMAR-052,Amarilis,Rígido,2025-11-26,7.2,1000,Grietas longitudinales,Baja,11,75.6,SIMULADO
+REG-0094,AMAR-054,Amarilis,Rígido,2021-11-08,18.5,8150,Grietas longitudinales,Alta,20,38.3,SIMULADO
+REG-0095,AMAR-054,Amarilis,Rígido,2023-11-15,20.5,8150,Grietas longitudinales,Alta,17,36.5,SIMULADO
+REG-0096,AMAR-054,Amarilis,Rígido,2025-11-25,22.5,8150,Grietas longitudinales,Alta,33,31.7,SIMULADO
+REG-0001,HUAN-001,Huánuco,Rígido,2021-11-08,14.3,3150,Despostillamiento,Alta,16,48.0,SIMULADO
+REG-0002,HUAN-001,Huánuco,Rígido,2025-11-25,18.3,3150,Despostillamiento,Alta,25,43.3,SIMULADO
+REG-0010,HUAN-006,Huánuco,Rígido,2022-11-04,13.4,6500,Grietas longitudinales,Baja,9,64.4,SIMULADO
+REG-0011,HUAN-006,Huánuco,Rígido,2025-11-14,16.4,6500,Grietas longitudinales,Baja,21,51.9,SIMULADO
+REG-0018,HUAN-011,Huánuco,Rígido,2021-11-26,0.4,5000,Grietas longitudinales,Media,4,96.0,SIMULADO
+REG-0019,HUAN-011,Huánuco,Rígido,2023-11-08,2.4,5000,Grietas longitudinales,Media,5,84.9,SIMULADO
+REG-0020,HUAN-011,Huánuco,Rígido,2025-11-18,4.4,5000,Grietas longitudinales,Media,5,87.9,SIMULADO
+REG-0032,HUAN-019,Huánuco,Rígido,2021-10-24,18.1,5400,Despostillamiento,Baja,22,53.4,SIMULADO
+REG-0033,HUAN-019,Huánuco,Rígido,2025-11-27,22.1,5400,Despostillamiento,Baja,27,40.9,SIMULADO
+REG-0038,HUAN-022,Huánuco,Rígido,2025-11-14,14.6,9900,Despostillamiento,Baja,16,45.5,SIMULADO
+REG-0045,HUAN-025,Huánuco,Rígido,2023-11-23,20.5,6150,Grietas longitudinales,Baja,19,33.7,SIMULADO
+REG-0046,HUAN-025,Huánuco,Rígido,2025-11-08,22.5,6150,Grietas longitudinales,Baja,26,26.4,SIMULADO
+REG-0047,HUAN-026,Huánuco,Rígido,2022-10-23,5.8,9450,Losa dividida,Alta,11,73.2,SIMULADO
+REG-0048,HUAN-026,Huánuco,Rígido,2025-11-05,8.8,9450,Losa dividida,Alta,10,62.4,SIMULADO
+REG-0052,HUAN-029,Huánuco,Rígido,2021-10-31,15.5,5500,Grietas de esquina,Alta,19,44.8,SIMULADO
+REG-0053,HUAN-029,Huánuco,Rígido,2025-11-24,19.5,5500,Grietas de esquina,Alta,19,33.3,SIMULADO
+REG-0060,HUAN-033,Huánuco,Rígido,2022-12-01,8.9,8850,Grietas de esquina,Baja,9,63.3,SIMULADO
+REG-0061,HUAN-033,Huánuco,Rígido,2025-10-25,11.9,8850,Grietas de esquina,Baja,14,48.4,SIMULADO
+REG-0066,HUAN-037,Huánuco,Rígido,2021-11-16,12.3,4500,Losa dividida,Baja,20,67.0,SIMULADO
+REG-0067,HUAN-037,Huánuco,Rígido,2022-11-26,13.3,4500,Losa dividida,Baja,22,69.2,SIMULADO
+REG-0068,HUAN-037,Huánuco,Rígido,2025-11-18,16.3,4500,Losa dividida,Baja,17,52.7,SIMULADO
+REG-0069,HUAN-038,Huánuco,Rígido,2025-11-06,25.9,5250,Grietas de esquina,Baja,27,48.2,SIMULADO
+REG-0070,HUAN-039,Huánuco,Rígido,2025-10-21,12.9,1050,Grietas de esquina,Baja,22,73.2,SIMULADO
+REG-0073,HUAN-042,Huánuco,Rígido,2025-11-08,12.6,3200,Grietas longitudinales,Baja,14,68.1,SIMULADO
+REG-0076,HUAN-044,Huánuco,Rígido,2025-11-22,11.7,8250,Escalonamiento,Baja,16,55.2,SIMULADO
+REG-0080,HUAN-047,Huánuco,Rígido,2021-11-26,18.5,7300,Despostillamiento,Baja,27,53.5,SIMULADO
+REG-0081,HUAN-047,Huánuco,Rígido,2025-10-17,22.5,7300,Despostillamiento,Baja,21,44.4,SIMULADO
+REG-0082,HUAN-048,Huánuco,Rígido,2021-11-01,16.2,9850,Losa dividida,Media,22,38.6,SIMULADO
+REG-0083,HUAN-048,Huánuco,Rígido,2025-11-24,20.2,9850,Losa dividida,Media,22,33.7,SIMULADO
+REG-0007,PILL-004,Pillco Marca,Rígido,2021-11-27,2.9,11250,Grietas longitudinales,Media,3,76.3,SIMULADO
+REG-0008,PILL-004,Pillco Marca,Rígido,2025-11-05,6.9,11250,Grietas longitudinales,Media,7,68.2,SIMULADO
+REG-0023,PILL-013,Pillco Marca,Rígido,2025-10-28,11.4,4250,Grietas transversales,Baja,21,69.1,SIMULADO
+REG-0037,PILL-021,Pillco Marca,Rígido,2025-10-29,24.3,7800,Despostillamiento,Baja,28,28.3,SIMULADO
+REG-0050,PILL-028,Pillco Marca,Rígido,2023-10-27,21.0,7200,Grietas de esquina,Media,20,34.4,SIMULADO
+REG-0051,PILL-028,Pillco Marca,Rígido,2025-11-28,23.0,7200,Grietas de esquina,Media,30,27.7,SIMULADO
+REG-0058,PILL-032,Pillco Marca,Rígido,2021-11-12,13.6,8750,Losa dividida,Alta,17,43.3,SIMULADO
+REG-0059,PILL-032,Pillco Marca,Rígido,2025-10-21,17.6,8750,Losa dividida,Alta,18,28.9,SIMULADO
+REG-0062,PILL-034,Pillco Marca,Rígido,2021-10-19,6.9,2750,Losa dividida,Media,8,79.5,SIMULADO
+REG-0063,PILL-034,Pillco Marca,Rígido,2025-11-01,10.9,2750,Losa dividida,Media,9,69.8,SIMULADO
+REG-0071,PILL-040,Pillco Marca,Rígido,2025-11-28,3.8,4200,Losa dividida,Alta,11,80.4,SIMULADO
+REG-0072,PILL-041,Pillco Marca,Rígido,2025-11-26,11.3,7500,Despostillamiento,Baja,7,69.1,SIMULADO
+REG-0077,PILL-045,Pillco Marca,Rígido,2023-11-20,17.5,6800,Escalonamiento,Alta,19,44.0,SIMULADO
+REG-0078,PILL-045,Pillco Marca,Rígido,2025-10-20,19.5,6800,Escalonamiento,Alta,26,35.5,SIMULADO
+REG-0087,PILL-050,Pillco Marca,Rígido,2023-11-16,11.2,9400,Grietas de esquina,Baja,23,64.9,SIMULADO
+REG-0088,PILL-050,Pillco Marca,Rígido,2025-11-04,13.2,9400,Grietas de esquina,Baja,13,58.1,SIMULADO
+REG-0003,SANT-002,Santa María del Valle,Rígido,2021-10-28,8.7,9300,Grietas longitudinales,Alta,11,62.8,SIMULADO
+REG-0004,SANT-002,Santa María del Valle,Rígido,2025-11-22,12.7,9300,Grietas longitudinales,Alta,13,50.6,SIMULADO
+REG-0027,SANT-016,Santa María del Valle,Rígido,2025-11-28,12.1,5250,Despostillamiento,Baja,16,73.1,SIMULADO
+REG-0028,SANT-017,Santa María del Valle,Rígido,2021-11-13,3.9,6500,Losa dividida,Baja,5,81.5,SIMULADO
+REG-0029,SANT-017,Santa María del Valle,Rígido,2025-10-24,7.9,6500,Losa dividida,Baja,14,78.3,SIMULADO
+REG-0030,SANT-018,Santa María del Valle,Rígido,2022-11-20,8.2,6150,Escalonamiento,Media,7,87.2,SIMULADO
+REG-0031,SANT-018,Santa María del Valle,Rígido,2025-11-19,11.2,6150,Escalonamiento,Media,12,71.4,SIMULADO
+REG-0039,SANT-023,Santa María del Valle,Rígido,2022-11-19,15.9,7100,Escalonamiento,Media,20,55.4,SIMULADO
+REG-0040,SANT-023,Santa María del Valle,Rígido,2023-10-24,16.9,7100,Escalonamiento,Media,24,51.5,SIMULADO
+REG-0041,SANT-023,Santa María del Valle,Rígido,2025-11-30,18.9,7100,Escalonamiento,Media,27,51.0,SIMULADO
+REG-0049,SANT-027,Santa María del Valle,Rígido,2025-11-09,1.9,3800,Grietas de esquina,Baja,8,89.4,SIMULADO
+REG-0054,SANT-030,Santa María del Valle,Rígido,2021-10-19,14.5,6200,Losa dividida,Baja,12,69.3,SIMULADO
+REG-0055,SANT-030,Santa María del Valle,Rígido,2025-11-05,18.5,6200,Losa dividida,Baja,24,50.7,SIMULADO
+REG-0064,SANT-035,Santa María del Valle,Rígido,2025-10-25,0.6,7250,Escalonamiento,Baja,3,90.8,SIMULADO
+REG-0065,SANT-036,Santa María del Valle,Rígido,2025-10-21,16.1,1900,Despostillamiento,Alta,20,52.6,SIMULADO
+REG-0089,SANT-051,Santa María del Valle,Rígido,2021-10-23,8.7,4600,Grietas longitudinales,Media,9,73.8,SIMULADO
+REG-0090,SANT-051,Santa María del Valle,Rígido,2025-11-26,12.7,4600,Grietas longitudinales,Media,8,66.1,SIMULADO
+REG-0092,SANT-053,Santa María del Valle,Rígido,2021-11-27,9.7,7700,Losa dividida,Baja,10,76.0,SIMULADO
+REG-0093,SANT-053,Santa María del Valle,Rígido,2025-11-28,13.7,7700,Losa dividida,Baja,13,67.2,SIMULADO
+REG-0097,SANT-055,Santa María del Valle,Rígido,2021-11-25,11.4,5350,Grietas de esquina,Media,21,69.8,SIMULADO
+REG-0098,SANT-055,Santa María del Valle,Rígido,2025-11-28,15.4,5350,Grietas de esquina,Media,19,57.3,SIMULADO

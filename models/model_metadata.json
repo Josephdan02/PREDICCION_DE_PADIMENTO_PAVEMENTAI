@@ -1,0 +1,42 @@
+{
+  "app": "PAVEMENT AI",
+  "version": "1.0.0",
+  "algoritmo": "sklearn.linear_model.LinearRegression",
+  "variable_independiente": "antiguedad_anios",
+  "variable_dependiente": "pci_observado",
+  "ecuacion": "PCI = 93.72 − 2.625 × antigüedad",
+  "intercepto": 93.72262,
+  "pendiente": -2.6248,
+  "metricas": {
+    "r2": 0.754126,
+    "mae": 8.029917,
+    "rmse": 9.019922
+  },
+  "metricas_entrenamiento": {
+    "r2": 0.76245,
+    "mae": 6.845456,
+    "rmse": 8.443202
+  },
+  "conjunto_prueba": {
+    "n_registros": 23,
+    "n_tramos": 11
+  },
+  "conjunto_entrenamiento": {
+    "n_registros": 75,
+    "n_tramos": 44
+  },
+  "total_registros_limpios": 98,
+  "metodo_division": "GroupShuffleSplit (agrupado por codigo_tramo)",
+  "test_size": 0.2,
+  "random_state": 42,
+  "rango_antiguedad_entrenamiento": {
+    "min": 0.6,
+    "max": 25.9
+  },
+  "rango_pci_observado": {
+    "min": 26.4,
+    "max": 100.0
+  },
+  "origen_datos": "Dataset sintético (tipo_registro = SIMULADO). No son inspecciones reales de Huánuco.",
+  "fecha_entrenamiento": "2026-11-24T23:46:55+00:00"
+}
